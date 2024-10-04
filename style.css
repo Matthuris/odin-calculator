@@ -16,6 +16,7 @@
   border: thick, solid, grey;
   height: 10%;
   background-color: lightgrey;
+  font-size: 7vh;
 }
 .inputs {
   text-align: center;
