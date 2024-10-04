@@ -16,13 +16,14 @@ operate = function (a, op, b) {
   if (op === "x") return multiply(a, b);
   if (op === "÷") return divide(a, b);
 };
-
+let displayValue;
 displayCalc = function () {
   display = document.querySelector(".display");
   inputs = document.querySelector(".inputs");
   inputs.addEventListener("click", function (e) {
-    if (!e.target.classList.contains("no-display")) {
+    if (e.target.classList.contains("valid-display")) {
       display.textContent += e.target.textContent;
+      displayValue = display.textContent;
     }
   });
 };
