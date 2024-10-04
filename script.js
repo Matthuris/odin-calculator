@@ -17,9 +17,10 @@ operate = function (a, op, b) {
   if (op === "÷") return divide(a, b);
 };
 let displayValue;
+display = document.querySelector(".display");
+inputs = document.querySelector(".inputs");
+clear = document.querySelector(".clear");
 displayCalc = function () {
-  display = document.querySelector(".display");
-  inputs = document.querySelector(".inputs");
   inputs.addEventListener("click", function (e) {
     if (e.target.classList.contains("valid-display")) {
       display.textContent += e.target.textContent;
@@ -27,4 +28,11 @@ displayCalc = function () {
     }
   });
 };
+clearDisplay = function () {
+  clear.addEventListener("click", function (e) {
+    display.textContent = "";
+    displayValue = display.textContent;
+  });
+};
 displayCalc();
+clearDisplay();
