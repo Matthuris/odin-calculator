@@ -20,7 +20,7 @@ let displayValue;
 display = document.querySelector(".display");
 inputs = document.querySelector(".inputs");
 clear = document.querySelector(".clear");
-displayCalc = function () {
+displayOp = function () {
   inputs.addEventListener("click", function (e) {
     if (e.target.classList.contains("valid-display")) {
       display.textContent += e.target.textContent;
@@ -34,5 +34,6 @@ clearDisplay = function () {
     displayValue = display.textContent;
   });
 };
-displayCalc();
+calculate;
+displayOp();
 clearDisplay();
