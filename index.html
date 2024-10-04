@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
     <title>Calculator</title>
   </head>
@@ -12,30 +12,33 @@
       <div class="calculator">
         <div class="display"></div>
         <div class="inputs">
+          <div>
+            <button class="no-display">Clear</button>
+          </div>
           <div class="operators">
-            <button>+</button>
-            <button>-</button>
-            <button>x</button>
-            <button>÷</button>
+            <button class="valid-display">+</button>
+            <button class="valid-display">-</button>
+            <button class="valid-display">x</button>
+            <button class="valid-display">÷</button>
           </div>
           <div class="numbers">
             <div>
-              <button>1</button>
-              <button>2</button>
-              <button>3</button>
+              <button class="valid-display">1</button>
+              <button class="valid-display">2</button>
+              <button class="valid-display">3</button>
               <button>4</button>
             </div>
             <div>
-              <button>5</button>
-              <button>6</button>
-              <button>7</button>
-              <button>8</button>
+              <button class="valid-display">5</button>
+              <button class="valid-display">6</button>
+              <button class="valid-display">7</button>
+              <button class="valid-display">8</button>
             </div>
             <div>
-              <button>9</button>
-              <button>0</button>
-              <button>.</button>
-              <button>=</button>
+              <button class="valid-display">9</button>
+              <button class="valid-display">0</button>
+              <button class="valid-display">.</button>
+              <button class="no-display">=</button>
             </div>
           </div>
         </div>
