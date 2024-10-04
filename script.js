@@ -66,7 +66,11 @@ calculate = function () {
       number = null;
       display.textContent = "";
       while (operation.length > 1) {
+        console.log(operation);
         sum = operate(...operation.splice(0, 3));
+        console.log(sum);
+        operation.unshift(sum);
+        console.log(operation);
       }
       display.textContent = sum;
       refresh = true;
