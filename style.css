@@ -16,7 +16,9 @@
   border: thick, solid, grey;
   height: 10%;
   background-color: lightgrey;
-  font-size: 7vh;
+  font-size: 8vh;
+
+  font-family: "Digital-7", sans-serif;
 }
 .inputs {
   text-align: center;
