@@ -1,0 +1,29 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calculator {
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  width: 50vh;
+  background-color: grey;
+}
+.display {
+  border: thick, solid, grey;
+  height: 10%;
+  background-color: lightgrey;
+}
+.inputs {
+  text-align: center;
+}
+/* .operators {
+}
+.numbers {
+} */
+button {
+  width: 23%;
+}
